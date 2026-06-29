@@ -14,3 +14,5 @@ class Solution:
             right *= nums[i]
         return ans
         
+commit & push:
+Although it is a midle diffciultly question that still spend me lots of times.At first,I tend to use Violent slicing method,however,I found that require a large amoumt of memory space and perform extermely poorly.Consequnently,I optimized my algorithm, not only in terms of time but also space. Each value in the nums array is multiplied by 1 and then cumulatively multiplied into the ans array, obtaining left and right parts. The concept is similar, but the new method only requires traversing twice.                                   
