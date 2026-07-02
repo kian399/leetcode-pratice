@@ -1,5 +1,5 @@
 Introduce myself:
-Good morning, my name is [Name]. I am a second-year Software Engineering student. My main tech stack is Python, and I have been actively solving LeetCode problems to strengthen my data structures and algorithms foundation. I am looking for an internship in an English-speaking environment where I can contribute to real products and continue growing. That is why I am excited about this opportunity.
+Good morning, my name is kian. I am a second-year Software Engineering student. My main tech stack is Python and Java, and I have been actively solving LeetCode problems to strengthen my data structures and algorithms foundation. I am looking for an internship in an English-speaking environment where I can contribute to real products and continue growing. That is why I am excited about this opportunity.
 
 Mock interview:
 You: Let me first clarify the input and output. So the input is two strings, and the output should be a boolean — true if they are anagrams, false otherwise?
