@@ -1,3 +1,16 @@
+Reverse String
+Difficulty:Easy
+LeetCode Link: https://leetcode.com/problems/reverse-string/
+Problem Description
+Write a function that reverses a string. The input string is given as an array of characters s.
+You must do this by modifying the input array in-place with O(1) extra memory.
+Approach
+Two-Pointer Swap Solution
+We use two pointers, one starting at the beginning (left) and the other at the end (right) of the array. We swap the characters at these two positions, then move the left pointer forward and the right pointer backward, until they meet in the middle.
+In Python, we can directly swap two values using tuple unpacking: s[left], s[right] = s[right], s[left]. This is much cleaner than using a temporary variable. If we tried to assign one value first without a temp variable, we would lose the original value before we could copy it over.
+(1)Time Complexity: O(n), we traverse half of the array
+(2)Space Complexity: O(1), in-place modification with only two pointers
+
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """
@@ -9,3 +22,9 @@ class Solution:
             s[left],s[right] = s[right],s[left]
             left += 1
             right -= 1
+
+Reflection & Summary
+This is an easy problem, but it taught me a neat Python trick.
+At first, I was thinking about using a temporary variable to swap values, like in C++ or Java. But then I realized Python has a much more elegant way to do this — tuple unpacking a, b = b, a.
+The key insight here is the two-pointer technique: one pointer starts at the head and one at the tail, and they move toward each other while swapping values. This way we only need O(1) extra space and O(n) time.
+I also learned why you can't just do s[left] = s[right] first — you'd lose the original s[left] value before you can assign it to the right side. Python's tuple unpacking handles this automatically because it evaluates the right side first.
